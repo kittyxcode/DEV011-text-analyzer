@@ -14,14 +14,18 @@
     </header>
     <section>
       <ul>
-        <li>Caracteres</li>
-        <li>Caracteres sin espacio</li>
-        <li>Palabras</li>
-        <li>Numeros</li>
-        <li>Suma Numeros</li>
-        <li>Promedio Longitud</li>
+        <li data-testid:="character-count">Caracteres</li>
+        <li data-testid:="character-no-spaces-count">Caracteres sin espacio</li>
+        <li data-testid:="word-count">Palabras</li>
+        <li data-testid:="number-count">Numeros</li>
+        <li data-testid:="num-sum">Suma Numeros</li>
+        <li data-testid:="word-length-average">Promedio Longitud</li>
       </ul>
       <textarea name="texto" cols="30" rows="10"></textarea>
+      <button id="reset-button">Limpiar Metricas</button>
     </section>
+    <footer>
+      <p>Author: Katherine Pino</p>
+    </footer>
   </body>
 </html>
