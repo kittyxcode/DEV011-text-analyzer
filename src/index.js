@@ -5,11 +5,15 @@ import analyzer from "./analyzer.js";
 //obtener elemento dom a observar
 const textarea = document.querySelector("textarea");
 
+//obtener lista de elementos li
+const listLI= document.getElementsByClassName("li-style");
+
 //agregar listener y funcion asociada
 textarea.addEventListener("input", updateValuesController);
 
-//En esta funcion se actualiza
+
+//En esta funcion se actualiza los valores de texto de los 6 li
 function updateValuesController() {
-  const numero = analyzer.getCharacterCount(textarea.value);
-  alert(numero);
+  const characterCount = analyzer.getCharacterCount(textarea.value);
+  listLI[0].textContent="caracteres " + characterCount;
 }
