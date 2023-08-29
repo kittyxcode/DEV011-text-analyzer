@@ -13,6 +13,7 @@ textarea.addEventListener("input", updateValuesController);
 
 //En esta funcion se actualiza los valores de texto de los 6 li
 function updateValuesController() {
+  alert("hola");
   //obtener total caracteres
   const charactersCount = analyzer.getCharacterCount(textarea.value);
   //modificar li element value

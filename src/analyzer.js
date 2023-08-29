@@ -28,7 +28,6 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    
     text.length;
   },
   getNumberSum: (text) => {
