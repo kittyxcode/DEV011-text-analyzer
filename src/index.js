@@ -13,17 +13,14 @@ textarea.addEventListener("input", updateValuesController);
 
 //En esta funcion se actualiza los valores de texto de los 6 li
 function updateValuesController() {
-  alert("hola");
   //obtener total caracteres
   const charactersCount = analyzer.getCharacterCount(textarea.value);
   //modificar li element value
   listLI[0].textContent = "Caracteres: " + charactersCount;
 
-  //obtener total caracteres sin espacios
   const charactersCountExcludingSpaces = analyzer.getCharacterCountExcludingSpaces(textarea.value);
   listLI[1].textContent = "Caracteres sin espacio: " + charactersCountExcludingSpaces;
 
-  //
   const wordsCount = analyzer.getWordCount(textarea.value);
   listLI[2].textContent = "Palabras: " + wordsCount;
 
