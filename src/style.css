@@ -1,9 +1,38 @@
 /*Selector de tipo*/
-header{}
+header{
+
+}
 
 /*Selector de tipo*/
 footer{}
 
-.li-style{
-    
+/*selector de atributo*/
+textarea[name="user-input"]{
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Margen automático a izquierda y derecha para centrar horizontalmente */
+    display: block;
 }
+
+/*selector ID*/
+#reset-button {
+    display: block;
+    width: 160px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    text-align: center; /* Centra el texto dentro del botón si es necesario */
+  }
+
+/*Selectores de clase*/
+.li-style{
+    display: inline-block;
+    position: relative;
+    top:25%; right: 0%;
+    width: 160px;
+    padding: 20px;
+    border: 2px solid black;
+    margin:10px;
+    text-align: center;
+}
+
+
