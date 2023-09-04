@@ -23,6 +23,7 @@ function updateValuesController() {
 
   const charactersCountExcludingSpaces = analyzer.getCharacterCountExcludingSpaces(textarea.value);
   listLI[1].textContent = "Caracteres sin espacio: " + charactersCountExcludingSpaces;
+  
 
   const wordsCount = analyzer.getWordCount(textarea.value);
   listLI[2].textContent = "Palabras: " + wordsCount;
